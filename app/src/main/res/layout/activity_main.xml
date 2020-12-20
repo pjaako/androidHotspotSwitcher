@@ -6,25 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonOn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="107dp"
-        android:layout_marginBottom="406dp"
-        android:onClick="onButtonManageHotspotClick"
-        android:text="Manage HotSpot"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-109dp">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="171dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="59dp"
-        android:onClick="onButtonCheckApStateClick"
-        android:text="Check HotSpot State"
-        app:layout_constraintStart_toStartOf="@+id/buttonOn"
-        app:layout_constraintTop_toTopOf="@+id/buttonOn" />
+        <Button
+            android:id="@+id/buttonCheckHotspotState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onButtonCheckHotspotStateClick"
+            android:text="Check HotSpot State" />
+
+        <Button
+            android:id="@+id/buttonShowStandardDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="onButtonShowStandardDialogClick"
+            android:text="Show standard dialog" />
+
+        <Button
+            android:id="@+id/buttonStartLocalOnlyHotspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onButtonStartLocalOnlyHotspotClick"
+            android:text="Start local only hotspot" />
+
+        <Button
+            android:id="@+id/buttonStopLocalOnlyHotspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:onClick="onButtonStopLocalOnlyHotspotClick"
+            android:text="STOP LOCAL ONLY HOTSPOT" />
+
+        <TextView
+            android:id="@+id/textViewHotspotInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Hotspot Info" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
